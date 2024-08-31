@@ -46,6 +46,7 @@
 
 .errorStateInput:focus {
     border-bottom: 2px solid #bf2155;
+
 }
 
 .passwordLabel {
@@ -153,6 +154,7 @@
 .errorState {
     color: #bf2155;
     border-bottom: none;
+    font-weight: 600;
 }
 
 .errorStateInput {
