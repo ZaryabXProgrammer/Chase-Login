@@ -58,7 +58,7 @@ body {
 
 @media (max-width: 480px) {
     .HeroWrapper {
-        gap: 3rem;
+        gap: 1rem;
         /* Reduce gap for smaller screens */
     }
 

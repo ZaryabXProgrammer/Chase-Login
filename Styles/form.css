@@ -182,7 +182,7 @@
 
 @media (max-width: 480px) {
     .FormContainer {
-        width: 23rem;
+        width: 21.5rem;
         /* Further reduce width for mobile screens */
         margin-bottom: 1rem;
         /* Adjust margins */
