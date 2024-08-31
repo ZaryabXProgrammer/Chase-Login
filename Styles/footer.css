@@ -1,0 +1,145 @@
+.footerContainer {
+    height: auto;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.footertopText {
+    margin-bottom: 10px;
+    color: #717171;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 24px;
+    color: #666666;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0092ff;
+}
+
+.social-icon i {
+    font-size: 22px;
+}
+
+.FooterBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: gray;
+    text-decoration: underline;
+    font-size: 11px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #2c7bf3;
+}
+
+.lastText {
+    color: #666666;
+    text-align: center;
+    font-size: 11px;
+}
+
+.footer-separator {
+    height: 1px;
+    background-color: #ddd;
+    border: none;
+    margin: 10px 0;
+    width: 80%;
+    align-self: center;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .FooterBottom {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .footer-links {
+        gap: 15px;
+        /* Reduce gap between links */
+        font-size: 10px;
+        /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .FooterTop {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .FooterBottom {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 15px;
+        font-size: 9px;
+        margin-top: 10px;
+        /* Reduce font size for smaller screens */
+    }
+
+    .social-icon {
+        font-size: 20px;
+        margin: 5px;
+        /* Reduce spacing for icons */
+    }
+
+    .footer-separator {
+        width: 90%;
+        margin: 5px 0;
+        /* Adjust separator margins */
+    }
+
+    .lastText {
+        font-size: 10px;
+        /* Adjust text size */
+    }
+}

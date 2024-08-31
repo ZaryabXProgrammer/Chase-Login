@@ -1,0 +1,211 @@
+.FormContainer {
+    width: 24rem;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+}
+
+.loginForm {
+    padding-top: 55px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 83%;
+    height: 90%;
+}
+
+.formLabel {
+    color: #797979;
+    font-size: 15px;
+}
+
+.formInput {
+    outline: none;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #5a5a5a;
+    padding: 1px 0;
+    color: #505050;
+    width: 100%;
+}
+
+.formInput:focus {
+    border-bottom: 2px solid #0b6efd;
+}
+
+.errorStateInput:focus {
+    border-bottom: 2px solid #bf2155;
+}
+
+.passwordLabel {
+    margin-top: 24px;
+}
+
+.passwordWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.togglePassBtn {
+    position: absolute;
+    right: 0;
+    top: 46%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #0b6efd;
+    font-size: 14px;
+    padding: 3px 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.togglePassBtn:hover {
+    background-color: #e5faff;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #797979;
+    border-radius: 8px;
+}
+
+.checkboxLabel input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    border-radius: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.newField {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.signInBtn {
+    width: 110%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 9px 0;
+    background-color: #0060f0;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 21px;
+    font-family: "Open Sans", Georgia, 'Times New Roman', Times, serif;
+}
+
+.forgotBox {
+    margin-top: 9px;
+    margin-left: -18px;
+}
+
+.forgotBox p {
+    color: #2c7bf3;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forgotBox p span {
+    margin-left: 4px;
+}
+
+.errorMessage {
+    color: #bf2155;
+    font-size: 12px;
+    display: none;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.errIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.errorState {
+    color: #bf2155;
+    border-bottom: none;
+}
+
+.errorStateInput {
+    border-bottom: 1px solid #bf2155;
+}
+
+/* Media Queries for mobile responsiveness */
+
+@media (max-width: 768px) {
+    .FormContainer {
+        width: 20rem;
+        /* Adjust width for tablet screens */
+    }
+
+    .loginForm {
+        width: 90%;
+        /* Make the form slightly wider */
+    }
+
+    .signInBtn {
+        width: 100%;
+        /* Adjust button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .FormContainer {
+        width: 23rem;
+        /* Further reduce width for mobile screens */
+        margin-bottom: 1rem;
+        /* Adjust margins */
+        margin-top: 5px;
+    }
+
+    .loginForm {
+        width: 87%;
+        /* Make the form take full width */
+        padding-right: 10px;
+        /* Adjust padding */
+        padding-left: 10px;
+    }
+
+    .signInBtn {
+        width: 100%;
+        /* Ensure button takes full width */
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    .forgotBox {
+        margin-left: 0;
+        /* Align the forgot box properly */
+        text-align: center;
+        /* Center the text */
+    }
+}

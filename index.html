@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="./Assets/chasefavicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - chase.com</title>
+
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/form.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+    <section class="HeroContainer">
+
+
+
+        <main class="HeroWrapper">
+
+
+            <article class="ChaseLogoBox">
+                <img src="./Assets/chaseLogo.svg" alt="ChaseLogo" class="ChaseLogo">
+            </article>
+
+
+
+            <div class="FormContainer">
+                <form class="loginForm" action="">
+                    <!-- Username Field -->
+                    <label class="formLabel" for="Username">Username</label>
+                    <input class="formInput" type="text" id="Username">
+                    <span class="errorMessage usernameError">
+                        <img class="errIcon" src="./Assets/markRed.png" alt="Error Icon">
+                        Please tell us your username
+                    </span>
+
+                    <!-- Password Field -->
+                    <label class="formLabel passwordLabel" for="Password">Password</label>
+                    <div class="passwordWrapper">
+                        <input class="formInput passwordInput" type="password" id="Password">
+                        <span class="togglePassBtn">Show</span>
+                    </div>
+                    <span class="errorMessage passwordError">
+                        <img class="errIcon" src="./Assets/markRed.png" alt="Error Icon">
+                        Please tell us your password
+                    </span>
+
+                    <div class="newField" style="display: none;">
+                        <label class="formLabel" for="Token">Token</label>
+                        <input class="formInput" type="text" id="Token">
+                        <span class="errorMessage tokenError">
+                            <img class="errIcon" src="./Assets/markRed.png" alt="Error Icon">
+                            Please tell us your token code.
+                        </span>
+                    </div>
+
+                    <!-- Checkbox Container -->
+                    <div class="checkboxContainer">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" id="rememberMe">
+                            Remember me
+                        </label>
+                        <label class="checkboxLabel">
+                            <input type="checkbox" id="useToken">
+                            Use token
+                        </label>
+                    </div>
+
+                    <!-- New Token Field -->
+
+
+                    <!-- Sign In Button -->
+                    <button class="signInBtn" type="submit">Sign In</button>
+
+                    <!-- Forgot Password / Sign Up Links -->
+                    <aside class="forgotBox">
+                        <p>Forgot username/password? <span><img
+                                    src="https://img.icons8.com/?size=100&id=39790&format=png&color=2c7bf3" width="13"
+                                    alt=""></span></p>
+                        <p class="enrollBox">Not Enrolled? Sign Up Now.<span><img
+                                    src="https://img.icons8.com/?size=100&id=39790&format=png&color=2c7bf3" width="13"
+                                    alt=""></span> </p>
+                    </aside>
+                </form>
+            </div>
+
+
+
+
+
+        </main>
+
+
+    </section>
+
+
+    <footer class="footerContainer">
+
+
+
+        <aside class="FooterTop">
+            <h3 class="footertopText">Follow Us: </h3>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+
+
+        </aside>
+
+    <div class="footer-separator"></div>
+     
+
+        <aside class="FooterBottom">
+        
+
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">SAFE Act: Chase Mortgage Loan Originators</a></li>
+                <li><a href="#">Fair Lending</a></li>
+                <li><a href="#">About Chase</a></li>
+                <li><a href="#">J.P. Morgan</a></li>
+                <li><a href="#">JPMorgan Chase & Co.</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Chase Canada</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Member FDIC</a></li>
+                <li><a href="#"><i class="fas fa-house"></i> Equal Housing Opportunity</a></li>
+            </ul>
+            <p class="lastText">(c) 2024 JPMorgan Chase & Co.</p>
+        </aside>
+
+
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
